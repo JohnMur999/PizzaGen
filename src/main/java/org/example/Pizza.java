@@ -2,12 +2,12 @@ package org.example;
 import java.util.Scanner;
 
 public class Pizza {
-    private final Integer price;
-    private final Boolean composition;
+    private Integer price;
+    private Boolean composition;
     private final Integer extraCheesePrice = 100;
     private final Integer extraToppingsPrice = 120;
     private final Integer backpackPrice = 20;
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
 
 
@@ -34,22 +34,14 @@ public class Pizza {
     }
     public void handleClientChoice(String choice) {
         switch (choice) {
-            case "1" :
-                addExtraCheese();
-                break;
-            case "2" :
-                addExtraToppings();
-                break;
-            case "3" :
-                takeAway();
-                break;
-            case "4" :
-                getBill();
-                break;
-            default:
+            case "1" -> addExtraCheese();
+            case "2" -> addExtraToppings();
+            case "3" -> takeAway();
+            case "4" -> getBill();
+            default -> {
                 System.out.println("Incorrect input, try again.");
                 informationAboutAdds();
-                break;
+            }
         }
 
     }
