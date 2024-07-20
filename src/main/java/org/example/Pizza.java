@@ -2,11 +2,11 @@ package org.example;
 import java.util.Scanner;
 
 public class Pizza {
-    private Integer price;
-    private Boolean composition;
-    private Integer extraCheesePrice = 100;
-    private Integer extraToppingsPrice = 120;
-    private Integer backpackPrice = 20;
+    private final Integer price;
+    private final Boolean composition;
+    private final Integer extraCheesePrice = 100;
+    private final Integer extraToppingsPrice = 120;
+    private final Integer backpackPrice = 20;
     private Scanner scanner = new Scanner(System.in);
 
 
