@@ -58,7 +58,7 @@ public class Pizza {
     }
     public void addExtraToppings() {
         System.out.println("Extra toppings added");
-        this.price += extraToppingsPrice;;
+        this.price += extraToppingsPrice;
         informationAboutAdds();
     }
 
